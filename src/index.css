@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ margin: 0 auto;
+ font-family: "Quicksand", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ background: #fdc830; /* fallback for old browsers */
+ background: -webkit-linear-gradient(to top, #f37335, #fdc830); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to top, #f37335, #fdc830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: #48605b;
+ min-height: 100vh;
+ min-width: 100vw;
+ position: relative;
+}
+
+#header {
+ width: 50%;
+ margin: auto;
+ text-align: center;
+}
+
+#header img {
+ opacity: 0.9;
+ border-radius: 50%;
+ width: 5rem;
+ height: 5rem;
+ object-fit: contain;
+ background-color: transparent;
+}
+
+#header h1 {
+ font-size: 1.5rem;
+}
+
+#user-input {
+ padding: 1rem;
+ max-width: 30rem;
+ margin: 2rem auto;
+ border-radius: 6px;
+ background: linear-gradient(180deg, #fdc830, #f37335);
+}
+
+.input-group {
+ display: flex;
+ justify-content: space-evenly;
+ gap: 1.5rem;
+}
+
+#user-input label {
+ text-align: center;
+ display: block;
+ margin-bottom: 0.3rem;
+ font-family: "Roboto", sans-serif;
+ font-size: 1rem;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+#user-input input {
+ margin-bottom: 0.3rem;
+ width: 100%;
+ padding: 0.5rem;
+ border: 1px solid #c0a976;
+ border-radius: 0.5rem;
+ background-color: transparent;
+ color: #000000;
+ font-size: 1rem;
+}
+
+#result {
+ max-width: 50rem;
+ margin: auto;
+ padding: 0.2rem;
+ table-layout: fixed;
+ border-spacing: 1rem;
+ text-align: center;
+}
+
+#result thead {
+ font-size: 1rem;
+ color: #2e261a;
+}
+
+#result tbody {
+ text-align: center;
+ font-family: "Roboto", sans-serif;
+ font-size: 0.9rem;
+ color: #38352e;
+}
+
+.center {
+ text-align: center;
+}
+@media screen and (max-width: 430px) {
+ #result thead {
+  text-align: center;
+  font-size: 0.6rem;
+  white-space: nowrap;
+ }
+ #result tbody {
+  font-size: 0.8rem;
+ }
+ .input-group {
+  gap: 1rem;
+  padding: 4px;
+ }
+ #user-input label {
+  font-size: 0.8rem;
+ }
+ #user-input input {
+  font-size: 0.7rem;
+ }
+}
